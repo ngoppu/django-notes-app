@@ -3,7 +3,7 @@ FROM python:3.9
 WORKDIR /app/backend
 
 COPY requirements.txt /app/backend
-# install system packages for App
+# install system packages
 RUN pip install -r requirements.txt
 
 COPY . /app/backend
